@@ -11,6 +11,11 @@ Regular Expressions Use Regex (in Atom for now)
 To match all instances of ""==Monday== ==Tuesday= =Thursday= =Wednesday=", but not ======childrens===========, ==Could not place. Missing Date and Time information== This is good -helps MarComm to red-penning.
 ^==\w+....[day]==
 
+Need to find/replace for ==Others==, does not fall within day of week match.
+(==Others==)
+
+Need to reformat Children, Teens, Adults to remove ===, right?
+
 # Remove Double line break, replace with single line break
 Find and Replace
 Find      \n\n
