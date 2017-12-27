@@ -1,0 +1,17 @@
+Removing Spaces
+ - Extra spaces between events (double spaces)
+
+ - changing ====children==== to Children
+ formatting things with macros
+
+Regular Expressions Use Regex (in Atom for now)
+
+# For now, use git ls-files to view the directory. Git status showing all of Documents folder. Cannot untrack.
+
+To match all instances of ""==Monday== ==Tuesday= =Thursday= =Wednesday=", but not ======childrens===========, ==Could not place. Missing Date and Time information== This is good -helps MarComm to red-penning.
+^==\w+....[day]==
+
+# Remove Double line break, replace with single line break
+Find and Replace
+Find      \n\n
+Replace   \n
