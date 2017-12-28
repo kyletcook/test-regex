@@ -1,22 +1,36 @@
 Removing Spaces
- - Extra spaces between events (double spaces)
 
- - changing ====children==== to Children
- formatting things with macros
+ - Create page breaks between all 21 branches (will have to do manually in Word. Not compatible with Text Editors without Javascript)
+ x Remove Extra spaces between events (double spaces)
+ x Match all days of week, remove. Remove "others"
+ - Find ====children==== replace: Children
+ - formatting things with macros
 
 Regular Expressions Use Regex (in Atom for now)
 
-# For now, use git ls-files to view the directory. Git status showing all of Documents folder. Cannot untrack.
-
 To match all instances of ""==Monday== ==Tuesday= =Thursday= =Wednesday=", but not ======childrens===========, ==Could not place. Missing Date and Time information== This is good -helps MarComm to red-penning.
-^==\w+....[day]==
+FIND ^==\w+[day]==
+REPLACE  \n
 
 Need to find/replace for ==Others==, does not fall within day of week match.
-(==Others==)
-
-Need to reformat Children, Teens, Adults to remove ===, right?
+FIND ==Others==
+REPLACE \n 
 
 # Remove Double line break, replace with single line break
 Find and Replace
-Find      \n\n
+Find      (\r\n\s*$){2,}
 Replace   \n
+
+Need to reformat Children, Teens, Adults to remove ===, right?
+
+Insert Text from file. Open as Windows
+
+>Go To Page 1 
+FIND ======childrens===========
+REPLACE ALL CHILDREN
+>Return to top of page 
+FIND ======teens===========
+REPLACE ALL TEENS 
+>Return to top of page 
+FIND ======adults===========
+REPLACE ALL ADULTS
