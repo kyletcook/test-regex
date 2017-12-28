@@ -16,6 +16,8 @@ Need to find/replace for ==Others==, does not fall within day of week match.
 FIND ==Others==
 REPLACE \n 
 
+
+Notepad++ Macro Called REMOVE_EXTRA_LINES - only on Cook's Windows computer at this point. 
 # Remove Double line break, replace with single line break
 Find and Replace
 Find      (\r\n\s*$){2,}
